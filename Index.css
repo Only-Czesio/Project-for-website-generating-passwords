@@ -1,0 +1,175 @@
+*{  /*This one is setting everything on default for each browser*/
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{ /*Style for text*/
+    font-family: montserrat;
+}
+nav{ /*Navigation Bar color and size*/
+    background: rgb(21, 127, 146); /* color of background */
+    height: 80px;
+    width: 100%;
+}
+label.logo{ /*Logo details*/
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin 1px 5px;
+}
+nav ul li a{
+    color: rgba(0, 0, 0, 0.945);
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: capitalize;
+}
+a.active, a:hover{
+    background: rgb(196, 70, 164);
+    transition: .5s;
+}
+.checkbutton{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+
+}
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left 50px;
+    }
+    nav ul li a{
+        font-size: 8px;
+    }
+}
+@media (max-width: 858px){
+    .checkbutton{
+        display: block;
+    }
+    ul{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background: #50060d;
+        top: 40px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px 0px;
+    }
+    nav ul li a{
+        font-size: 10px;
+    }
+    a:hover, a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+main{
+    background: url(Background_1.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+input.number{
+    size: 25px;
+    color: white;
+}
+.btn {
+    border-radius: 3px;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 300;
+    padding: 13px 40px;
+    border: 10;
+    transition: background-color 200ms, color 200ms;
+}
+.btn-accent {
+    color: var(--white);
+    background-color: rgb(196, 70, 164);
+}
+
+.btn-accent:hover {
+    color: var(--white);
+    background-color: var(--accent-2);
+    text-decoration: none;
+}
+
+.btn-accent:active {
+    color: var(--accent-1);
+    background-color: var(--accent-4);
+}
+
+.btn-accent[disabled] {
+    color: var(--accent-4);
+    background-color: var(--accent-5);
+    cursor: default;
+}
+
+.btn-outline {
+    color: var(--primary-1);
+    background-color: var(--primary-4);
+    border: var(--primary-1) 2px solid;
+    box-shadow: 1px 1px 7px #c4c4c4;
+    padding: 8px 25px;
+    border-radius: 10px;
+}
+label.label2{
+    color: rgb(196, 70, 164);
+    display: block;
+    text-align: left;
+    size: 100px;
+    margin-top: 50px;
+    font-size: 35px;
+    line-height: 30px;
+    margin-left: 0px;
+}
+input.submit{
+    text-align: center;
+}
+h1{
+    color: white;
+    font-weight: 100;
+    text-align: center;
+}
+p{
+    font-size: 35px;
+    margin-top: 50px;
+    padding 20px 20px;
+    color: white;
+    text-align: center;
+}
+footer{
+    color: black;
+    text-align: center;
+    background-color: turquoise;
+}
+strong{
+    color: rgb(59, 14, 35);
+}

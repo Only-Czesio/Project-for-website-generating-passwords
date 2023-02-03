@@ -1,0 +1,59 @@
+<!---FRONT END for my project WEBSITE -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="index.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stealNOmore</title>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbutton">
+        <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">Pass=(Gen)=Word</label>
+    <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">Goal</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About me</a></li>
+    </ul>
+</nav>
+<main class="container">
+    <h1>
+        Password generating application
+    </h1>
+    <p>
+        We all need <strong>strong</strong> and <strong>safe</strong> passwords for our accounts. 
+        Best would be to have on each account different password so if hacker steal your password from one of websites he cannot access
+        other acoounts you are connected to
+    </p>
+    
+    <form id="seed and URL entry">
+        <label class="label2" for="your-password">Enter seed</label>
+        <input type="number" min="0" max="1000" class="input" required placeholder="Seed (0-1000)" id="your-password">
+        <form id="URL">
+            <label class="label2" for="your-password">Enter URL</label>
+            <input type="link" class="input" required placeholder="URL" id="your-password">
+        </form>
+        <input type="submit" class="btn btn-accent" value="Generate your password">
+        <button class="Copy">Copy to clipboard</button>
+    </form>
+    <table border="1" id="data-repeat" class="table table-center" <thead>
+        <tr>
+            <th width="33%">Your Seed</th>
+            <th width="33%">Your URL</th>
+            <th>Your generated password</th>
+        </tr>
+        </thead>
+</main>
+<footer>
+    <contact>Marek Kamyk <br> marek@kamyk.me <br> Self-teaching at home to become Junior Software Developer</contact>
+</footer>
+</body>
+</html>
